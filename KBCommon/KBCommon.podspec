@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 KBCommon KBCountDownButton KBPlacehoderTextView...
                    DESC
 
-  s.homepage     = "http://EXAMPLE/KBCommon"
+  s.homepage     = "https://github.com/zhangyaweigithub/KBCommon.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -41,7 +41,7 @@ KBCommon KBCountDownButton KBPlacehoderTextView...
   #
 
 #s.license      = "MIT (example)"
-    s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+    s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -66,7 +66,7 @@ KBCommon KBCountDownButton KBPlacehoderTextView...
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -81,7 +81,9 @@ KBCommon KBCountDownButton KBPlacehoderTextView...
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/KBCommon.git", :tag => "#{s.version}" }
+#s.source       = { :git => "http://EXAMPLE/KBCommon.git", :tag => "#{s.version}" }
+s.source        = { :git => "https://github.com/zhangyaweigithub/KBCommon.git", :tag => s.version.to_s }
+
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +94,7 @@ KBCommon KBCountDownButton KBPlacehoderTextView...
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  =  "*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
